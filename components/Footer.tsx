@@ -1,17 +1,11 @@
 
 import React from 'react';
-import { ViewType } from '../types';
+import { Link } from 'react-router-dom';
 
-interface FooterProps {
-  onNavigate: (view: ViewType) => void;
-}
+interface FooterProps { }
 
-const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
-  const handleNav = (view: ViewType) => {
-    onNavigate(view);
-    window.location.hash = view;
-    window.scrollTo(0, 0);
-  };
+const Footer: React.FC<FooterProps> = () => {
+  const scrollToTop = () => window.scrollTo(0, 0);
 
   return (
     <footer className="w-full bg-dark-accent text-white py-16 md:py-24 px-4 md:px-10 lg:px-20">
@@ -26,9 +20,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <h4 className="text-primary font-black uppercase text-sm tracking-widest">Sígueme en redes</h4>
               <div className="flex flex-wrap gap-4">
                 {['TikTok', 'Instagram', 'LinkedIn', 'YouTube'].map((social) => (
-                  <a 
+                  <a
                     key={social}
-                    href="#" 
+                    href="#"
                     className="flex items-center gap-3 bg-white/10 hover:bg-primary transition-all p-3 pr-6 rounded-lg min-w-[140px] border border-white/5"
                   >
                     <div className="size-10 bg-white/20 rounded flex items-center justify-center">
@@ -56,10 +50,10 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div>
             <h4 className="text-primary font-black uppercase text-sm tracking-widest mb-6">Mapa del Sitio</h4>
             <ul className="space-y-3 font-bold">
-              <li><button onClick={() => handleNav('radio')} className="hover:text-primary transition-colors text-left">Radio: Comer a Ciegas</button></li>
-              <li><button onClick={() => handleNav('home')} className="hover:text-primary transition-colors text-left">El Camino del Fuego</button></li>
-              <li><button onClick={() => handleNav('accesibilidad')} className="hover:text-primary transition-colors text-left">Consultoría</button></li>
-              <li><button onClick={() => handleNav('conferencias')} className="hover:text-primary transition-colors text-left">Conferencias</button></li>
+              <li><Link to="/radio" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">Radio: Comer a Ciegas</Link></li>
+              <li><Link to="/" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">El Camino del Fuego</Link></li>
+              <li><Link to="/accesibilidad" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">Consultoría</Link></li>
+              <li><Link to="/conferencias" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">Conferencias</Link></li>
             </ul>
           </div>
         </div>
