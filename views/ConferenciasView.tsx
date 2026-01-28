@@ -7,14 +7,14 @@ const ConferenciasView: React.FC = () => {
       {/* Hero */}
       <section className="relative overflow-hidden rounded-2xl min-h-[520px] flex flex-col justify-end p-8 md:p-16 bg-cover bg-center mb-16" style={{ backgroundImage: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent), url("https://picsum.photos/seed/speaking/1200/600")' }}>
         <div className="relative z-10 space-y-6 max-w-3xl">
-          <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest w-fit">Keynote Speaker</span>
+          <span className="bg-[#FF6B00]/20 text-[#FF6B00] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest w-fit backdrop-blur-sm">Keynote Speaker</span>
           <h1 className="text-white text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
             Conferencias: Confianza, Coordinación y Rendimiento
           </h1>
           <p className="text-white/90 text-lg md:text-xl font-normal leading-relaxed">
             Transforma la dinámica de tu equipo con una perspectiva única sobre el liderazgo y el trabajo colectivo.
           </p>
-          <button className="bg-primary text-white h-12 px-8 rounded-lg font-bold hover:brightness-110">Reservar para tu evento</button>
+          <button className="bg-[#FF6B00] text-white h-12 px-8 rounded-lg font-bold hover:brightness-110 shadow-lg shadow-[#FF6B00]/20">Reservar para tu evento</button>
         </div>
       </section>
 
@@ -29,10 +29,10 @@ const ConferenciasView: React.FC = () => {
             <div className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-bold">{conf.title}</h3>
-                <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold">{conf.time}</span>
+                <span className="bg-[#FF6B00]/10 text-[#FF6B00] px-3 py-1 rounded-full text-xs font-bold">{conf.time}</span>
               </div>
               <p className="text-[#897261] mb-6">{conf.desc}</p>
-              <button className="text-primary font-bold text-sm flex items-center gap-2 hover:translate-x-1 transition-transform">
+              <button className="text-[#FF6B00] font-bold text-sm flex items-center gap-2 hover:translate-x-1 transition-transform">
                 Ver detalles <span className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
@@ -48,7 +48,7 @@ const ConferenciasView: React.FC = () => {
         </div>
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
-            <div className="bg-primary/10 text-primary size-10 flex items-center justify-center rounded-lg material-symbols-outlined">settings_input_component</div>
+            <div className="bg-[#FF6B00]/10 text-[#FF6B00] size-10 flex items-center justify-center rounded-lg material-symbols-outlined">settings_input_component</div>
             <h4 className="font-bold">Necesidades Técnicas</h4>
             <ul className="text-[#897261] text-sm space-y-2">
               <li>• Micrófono de diadema profesional</li>
@@ -57,7 +57,7 @@ const ConferenciasView: React.FC = () => {
             </ul>
           </div>
           <div className="space-y-4">
-            <div className="bg-primary/10 text-primary size-10 flex items-center justify-center rounded-lg material-symbols-outlined">flight_takeoff</div>
+            <div className="bg-[#FF6B00]/10 text-[#FF6B00] size-10 flex items-center justify-center rounded-lg material-symbols-outlined">flight_takeoff</div>
             <h4 className="font-bold">Viajes y Estancia</h4>
             <ul className="text-[#897261] text-sm space-y-2">
               <li>• Gestión de vuelos desde Madrid</li>
