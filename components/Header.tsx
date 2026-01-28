@@ -20,17 +20,19 @@ const Header: React.FC<HeaderProps> = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-solid border-[#f4f2f0] bg-white/90 backdrop-blur-md px-4 md:px-10 lg:px-20 py-4">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#FF6B00] shadow-lg shadow-orange-900/20 px-4 md:px-10 lg:px-20 py-4">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         <Link
           to="/"
           className="flex items-center gap-3 cursor-pointer"
           onClick={closeMenu}
         >
-          <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
-            <span className="material-symbols-outlined">visibility_off</span>
+          <div className="size-10 bg-white/20 rounded-xl flex items-center justify-center text-white backdrop-blur-sm border border-white/20">
+            <span className="material-symbols-outlined text-xl">visibility_off</span>
           </div>
-          <h2 className="text-dark-accent text-xl font-extrabold leading-tight tracking-tight">Jonatan Armengol</h2>
+          <h2 className="text-white text-2xl font-display font-black leading-tight tracking-tight">
+            Jonatan <span className="text-white/80">Armengol</span>
+          </h2>
         </Link>
 
         {/* Desktop Nav */}
@@ -41,7 +43,7 @@ const Header: React.FC<HeaderProps> = () => {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-sm font-bold transition-colors hover:text-primary ${isActive || (item.path === '/' && location.pathname === '/home') ? 'text-primary' : 'text-dark-accent'
+                  `text-sm font-bold transition-all duration-300 ${isActive || (item.path === '/' && location.pathname === '/home') ? 'text-white bg-white/20 px-3 py-1 rounded-lg' : 'text-white/70 hover:text-white hover:scale-105'
                   }`
                 }
               >
@@ -51,7 +53,7 @@ const Header: React.FC<HeaderProps> = () => {
           </nav>
           <Link
             to="/contacto"
-            className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-11 px-5 bg-primary text-white text-sm font-extrabold shadow-lg hover:brightness-110 transition-all"
+            className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-xl h-12 px-6 bg-white text-[#FF6B00] text-sm font-extrabold shadow-lg hover:bg-gray-50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300"
           >
             Contactar Representante
           </Link>
@@ -59,7 +61,7 @@ const Header: React.FC<HeaderProps> = () => {
 
         {/* Mobile menu toggle */}
         <div className="lg:hidden flex items-center gap-4">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-dark-accent">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white">
             <span className="material-symbols-outlined text-3xl">{isMenuOpen ? 'close' : 'menu'}</span>
           </button>
         </div>

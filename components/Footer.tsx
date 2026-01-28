@@ -8,7 +8,7 @@ const Footer: React.FC<FooterProps> = () => {
   const scrollToTop = () => window.scrollTo(0, 0);
 
   return (
-    <footer className="w-full bg-dark-accent text-white py-16 md:py-24 px-4 md:px-10 lg:px-20">
+    <footer className="w-full bg-[#1A1A1A] text-white py-16 md:py-24 px-4 md:px-10 lg:px-20 border-t border-[#FF6B00]/20">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
@@ -17,16 +17,16 @@ const Footer: React.FC<FooterProps> = () => {
               Comunicador, influencer gastronómico y experto en accesibilidad. Redefiniendo los límites de lo posible a través de la voz y el sentido del gusto.
             </p>
             <div className="flex flex-col gap-6">
-              <h4 className="text-primary font-black uppercase text-sm tracking-widest">Sígueme en redes</h4>
+              <h4 className="text-[#FF6B00] font-black uppercase text-sm tracking-widest">Sígueme en redes</h4>
               <div className="flex flex-wrap gap-4">
                 {['TikTok', 'Instagram', 'LinkedIn', 'YouTube'].map((social) => (
                   <a
                     key={social}
                     href="#"
-                    className="flex items-center gap-3 bg-white/10 hover:bg-primary transition-all p-3 pr-6 rounded-lg min-w-[140px] border border-white/5"
+                    className="flex items-center gap-3 bg-white/5 hover:bg-[#FF6B00] transition-all duration-300 p-3 pr-6 rounded-xl min-w-[140px] border border-white/5 hover:border-[#FF6B00]/50 group"
                   >
-                    <div className="size-10 bg-white/20 rounded flex items-center justify-center">
-                      <span className="material-symbols-outlined text-2xl">
+                    <div className="size-10 bg-white/10 group-hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
+                      <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
                         {social === 'Instagram' ? 'photo_camera' : social === 'LinkedIn' ? 'work' : social === 'YouTube' ? 'video_library' : 'music_note'}
                       </span>
                     </div>
@@ -48,12 +48,12 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
 
           <div>
-            <h4 className="text-primary font-black uppercase text-sm tracking-widest mb-6">Mapa del Sitio</h4>
-            <ul className="space-y-3 font-bold">
-              <li><Link to="/radio" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">Radio: Comer a Ciegas</Link></li>
-              <li><Link to="/" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">El Camino del Fuego</Link></li>
-              <li><Link to="/accesibilidad" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">Consultoría</Link></li>
-              <li><Link to="/conferencias" onClick={scrollToTop} className="hover:text-primary transition-colors text-left">Conferencias</Link></li>
+            <h4 className="text-[#FF6B00] font-black uppercase text-sm tracking-widest mb-6">Mapa del Sitio</h4>
+            <ul className="space-y-3 font-medium text-white/70">
+              <li><Link to="/radio" onClick={scrollToTop} className="hover:text-[#FF6B00] hover:translate-x-1 transition-all inline-block">Radio: Comer a Ciegas</Link></li>
+              <li><Link to="/" onClick={scrollToTop} className="hover:text-[#FF6B00] hover:translate-x-1 transition-all inline-block">El Camino del Fuego</Link></li>
+              <li><Link to="/accesibilidad" onClick={scrollToTop} className="hover:text-[#FF6B00] hover:translate-x-1 transition-all inline-block">Consultoría</Link></li>
+              <li><Link to="/conferencias" onClick={scrollToTop} className="hover:text-[#FF6B00] hover:translate-x-1 transition-all inline-block">Conferencias</Link></li>
             </ul>
           </div>
         </div>
