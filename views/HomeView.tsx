@@ -41,21 +41,22 @@ const HomeView: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="w-full bg-secondary py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/10 to-transparent pointer-events-none"></div>
+      {/* Stats Section */}
+      <section className="w-full bg-[#FFF5EB] py-20 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#FF6B00]/10 to-transparent pointer-events-none"></div>
         <div className="max-w-[1200px] mx-auto px-4 md:px-10 lg:px-0 flex flex-wrap justify-center md:justify-between items-center gap-12 text-center md:text-left">
-          <div className="flex flex-col items-center md:items-start flex-1 min-w-[250px] border-l-0 md:border-l-4 border-primary md:pl-8 group hover:-translate-y-2 transition-transform duration-500">
-            <p className="text-primary font-black uppercase tracking-[0.2em] mb-3 text-sm">Impacto Digital</p>
-            <h2 className="text-white text-7xl md:text-8xl font-black tracking-tighter leading-none group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/80 transition-all">1.17M</h2>
-            <p className="text-white/60 text-xl font-medium mt-3 flex items-center gap-2 justify-center md:justify-start">
-              <span className="size-2 bg-primary rounded-full animate-pulse"></span> Seguidores Totales
+          <div className="flex flex-col items-center md:items-start flex-1 min-w-[250px] border-l-0 md:border-l-4 border-[#FF6B00] md:pl-8 group hover:-translate-y-2 transition-transform duration-500">
+            <p className="text-[#FF6B00] font-black uppercase tracking-[0.2em] mb-3 text-sm">Impacto Digital</p>
+            <h2 className="text-[#FF6B00] text-7xl md:text-8xl font-black tracking-tighter leading-none transition-all drop-shadow-[0_2px_10px_rgba(255,107,0,0.3)]">1.17M</h2>
+            <p className="text-gray-800 text-xl font-medium mt-3 flex items-center gap-2 justify-center md:justify-start">
+              <span className="size-2 bg-[#FF6B00] rounded-full animate-pulse"></span> Seguidores Totales
             </p>
           </div>
-          <div className="flex flex-col items-center md:items-start flex-1 min-w-[250px] border-l-0 md:border-l-4 border-primary md:pl-8 group hover:-translate-y-2 transition-transform duration-500">
-            <p className="text-primary font-black uppercase tracking-[0.2em] mb-3 text-sm">Visibilidad Global</p>
-            <h2 className="text-white text-7xl md:text-8xl font-black tracking-tighter leading-none group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/80 transition-all">564M+</h2>
-            <p className="text-white/60 text-xl font-medium mt-3 flex items-center gap-2 justify-center md:justify-start">
-              <span className="size-2 bg-primary rounded-full animate-pulse"></span> Impresiones Anuales
+          <div className="flex flex-col items-center md:items-start flex-1 min-w-[250px] border-l-0 md:border-l-4 border-[#FF6B00] md:pl-8 group hover:-translate-y-2 transition-transform duration-500">
+            <p className="text-[#FF6B00] font-black uppercase tracking-[0.2em] mb-3 text-sm">Visibilidad Global</p>
+            <h2 className="text-[#FF6B00] text-7xl md:text-8xl font-black tracking-tighter leading-none transition-all drop-shadow-[0_2px_10px_rgba(255,107,0,0.3)]">564M+</h2>
+            <p className="text-gray-800 text-xl font-medium mt-3 flex items-center gap-2 justify-center md:justify-start">
+              <span className="size-2 bg-[#FF6B00] rounded-full animate-pulse"></span> Impresiones Anuales
             </p>
           </div>
         </div>
