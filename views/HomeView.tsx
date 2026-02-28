@@ -100,7 +100,7 @@ const HomeView: React.FC = () => {
               <p className="text-primary font-black uppercase tracking-widest mb-2">Contenido Original</p>
               <h2 className="text-4xl md:text-5xl font-black">El Camino del Fuego</h2>
             </div>
-            <a className="hidden md:flex items-center gap-2 font-bold text-primary hover:underline" href="#">
+            <a className="hidden md:flex items-center gap-2 font-bold text-primary hover:underline" href="https://www.youtube.com/@jonatanarmengol" target="_blank" rel="noopener noreferrer">
               Ver todo el canal <span className="material-symbols-outlined">trending_flat</span>
             </a>
           </div>

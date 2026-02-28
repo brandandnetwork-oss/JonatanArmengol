@@ -24,22 +24,34 @@ const InfluencerView: React.FC = () => {
       {/* Stats Cards */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8 bg-white rounded-xl border border-gray-100 shadow-sm mb-16">
         {[
-          { label: 'Instagram Followers', value: '150K+', trend: '+12%', icon: 'groups' },
-          { label: 'TikTok Views', value: '2.4M', trend: '+25%', icon: 'visibility' },
+          { label: 'Instagram Followers', value: '150K+', trend: '+12%', icon: 'groups', href: 'https://www.instagram.com/armengoljonatan/reels/' },
+          { label: 'TikTok Views', value: '2.4M', trend: '+25%', icon: 'visibility', href: 'https://www.tiktok.com/@jonatanarmengol' },
           { label: 'Engagement Rate', value: '4.8%', trend: 'Top 5%', icon: 'favorite' },
           { label: 'Alcance Mensual', value: '1.2M', trend: '+18%', icon: 'share' }
-        ].map((stat, i) => (
-          <div key={i} className="p-6 bg-[#f8f7f6] rounded-lg border border-transparent hover:border-[#FF6B00] transition-colors">
-            <div className="flex justify-between mb-4">
-              <span className="text-sm font-medium opacity-70">{stat.label}</span>
-              <span className="material-symbols-outlined text-[#FF6B00]">{stat.icon}</span>
+        ].map((stat, i) => {
+          const content = (
+            <>
+              <div className="flex justify-between mb-4">
+                <span className="text-sm font-medium opacity-70">{stat.label}</span>
+                <span className="material-symbols-outlined text-[#FF6B00]">{stat.icon}</span>
+              </div>
+              <p className="text-3xl font-extrabold">{stat.value}</p>
+              <p className="text-[#07880e] text-sm font-bold mt-2 flex items-center gap-1">
+                <span className="material-symbols-outlined text-sm">trending_up</span> {stat.trend}
+              </p>
+            </>
+          );
+
+          return stat.href ? (
+            <a key={i} href={stat.href} target="_blank" rel="noopener noreferrer" className="block p-6 bg-[#f8f7f6] rounded-lg border border-transparent hover:border-[#FF6B00] transition-colors cursor-pointer group hover:-translate-y-1">
+              {content}
+            </a>
+          ) : (
+            <div key={i} className="p-6 bg-[#f8f7f6] rounded-lg border border-transparent hover:border-[#FF6B00] transition-colors">
+              {content}
             </div>
-            <p className="text-3xl font-extrabold">{stat.value}</p>
-            <p className="text-[#07880e] text-sm font-bold mt-2 flex items-center gap-1">
-              <span className="material-symbols-outlined text-sm">trending_up</span> {stat.trend}
-            </p>
-          </div>
-        ))}
+          );
+        })}
       </section>
 
       {/* Brand Logos */}

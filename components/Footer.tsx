@@ -19,18 +19,25 @@ const Footer: React.FC<FooterProps> = () => {
             <div className="flex flex-col gap-6">
               <h4 className="text-[#FF6B00] font-black uppercase text-sm tracking-widest">Sígueme en redes</h4>
               <div className="flex flex-wrap gap-4">
-                {['TikTok', 'Instagram', 'LinkedIn', 'YouTube'].map((social) => (
+                {[
+                  { name: 'TikTok', href: 'https://www.tiktok.com/@jonatanarmengol', icon: 'music_note' },
+                  { name: 'Instagram', href: 'https://www.instagram.com/armengoljonatan/reels/', icon: 'photo_camera' },
+                  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/jonatan-armengol/', icon: 'work' },
+                  { name: 'YouTube', href: 'https://www.youtube.com/@jonatanarmengol', icon: 'video_library' }
+                ].map((social) => (
                   <a
-                    key={social}
-                    href="#"
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 bg-white/5 hover:bg-[#FF6B00] transition-all duration-300 p-3 pr-6 rounded-xl min-w-[140px] border border-white/5 hover:border-[#FF6B00]/50 group"
                   >
                     <div className="size-10 bg-white/10 group-hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
                       <span className="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">
-                        {social === 'Instagram' ? 'photo_camera' : social === 'LinkedIn' ? 'work' : social === 'YouTube' ? 'video_library' : 'music_note'}
+                        {social.icon}
                       </span>
                     </div>
-                    <span className="font-bold text-sm">{social}</span>
+                    <span className="font-bold text-sm">{social.name}</span>
                   </a>
                 ))}
               </div>
