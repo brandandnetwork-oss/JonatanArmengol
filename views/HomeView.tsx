@@ -77,9 +77,9 @@ const HomeView: React.FC = () => {
             <div className="p-8 flex flex-col justify-center flex-1">
               <h2 className="text-3xl font-black mb-4">Radio: Comer a Ciegas</h2>
               <p className="text-lg text-dark-accent/70 mb-6">Explorando la gastronomía desde una perspectiva sensorial pura. Escucha nuestro último análisis sobre la cocina de vanguardia sin el sentido de la vista.</p>
-              <button className="flex items-center gap-3 w-fit bg-[#FF6B00] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E65A00] transition-colors shadow-lg shadow-[#FF6B00]/20">
+              <a href="https://www.radio-espana.es/podcasts/comer-a-ciegas" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 w-fit bg-[#FF6B00] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E65A00] transition-colors shadow-lg shadow-[#FF6B00]/20">
                 <span className="material-symbols-outlined">play_circle</span> Escuchar Ahora
-              </button>
+              </a>
             </div>
           </div>
           <div className="bg-[#FF6B00] p-8 rounded-xl flex flex-col justify-between text-white shadow-xl shadow-orange-900/20">
