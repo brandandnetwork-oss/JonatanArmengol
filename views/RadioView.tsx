@@ -21,9 +21,9 @@ const RadioView: React.FC = () => {
             <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-[#FF6B00] text-white text-base font-bold transition-transform hover:scale-105 shadow-lg shadow-[#FF6B00]/30">
               <span className="material-symbols-outlined mr-2">play_arrow</span> Último episodio
             </button>
-            <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md text-white border border-white/20 text-base font-bold hover:bg-white/20">
+            <a href="https://www.radio-espana.es/podcasts/comer-a-ciegas" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md text-white border border-white/20 text-base font-bold hover:bg-white/20">
               Ver archivo
-            </button>
+            </a>
           </div>
         </div>
       </section>
