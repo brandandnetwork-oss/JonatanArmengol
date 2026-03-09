@@ -26,9 +26,9 @@ const HomeView: React.FC = () => {
               La comunicación no se ve, se siente: <br />Gastronomía y Liderazgo <span className="text-[#FF6B00] font-bold">sin límites</span>.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="flex items-center gap-3 bg-gradient-to-r from-[#FF6B00] to-[#E65A00] text-white px-8 py-5 rounded-2xl font-black text-lg hover:scale-105 hover:shadow-xl hover:shadow-[#FF6B00]/30 transition-all cursor-pointer">
+              <a href="https://www.radio-espana.es/podcasts/comer-a-ciegas" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-gradient-to-r from-[#FF6B00] to-[#E65A00] text-white px-8 py-5 rounded-2xl font-black text-lg hover:scale-105 hover:shadow-xl hover:shadow-[#FF6B00]/30 transition-all cursor-pointer">
                 <span className="material-symbols-outlined filled">radio</span> Escuchar Radio
-              </button>
+              </a>
               <button className="flex items-center gap-3 bg-white text-secondary px-8 py-5 rounded-2xl font-black text-lg hover:scale-105 hover:bg-gray-50 transition-all shadow-lg cursor-pointer">
                 <span className="material-symbols-outlined text-primary">local_fire_department</span> El Camino del Fuego
               </button>
