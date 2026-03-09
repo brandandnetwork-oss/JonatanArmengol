@@ -72,7 +72,7 @@ const HomeView: React.FC = () => {
                 className="w-full h-full object-cover"
                 src="/fondo-radio.webp"
               />
-              <div className="absolute top-4 left-4 bg-[#FF6B00] text-white px-3 py-1 rounded text-xs font-black uppercase">Último Episodio</div>
+
             </div>
             <div className="p-8 flex flex-col justify-center flex-1">
               <h2 className="text-3xl font-black mb-4">Radio: Comer a Ciegas</h2>
