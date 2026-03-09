@@ -8,7 +8,7 @@ const RadioView: React.FC = () => {
       <section className="p-4 md:p-10">
         <div
           className="flex min-h-[420px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-start justify-end px-6 pb-12 md:px-16 max-w-[1200px] mx-auto"
-          style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://picsum.photos/seed/radio-hero/1200/600")' }}
+          style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%), url("/fondo-radio.webp")' }}
         >
           <div className="flex flex-col gap-3 text-left max-w-2xl">
             <span className="bg-[#FF6B00] px-3 py-1 rounded text-white text-xs font-bold uppercase tracking-widest w-fit">Radio Program</span>

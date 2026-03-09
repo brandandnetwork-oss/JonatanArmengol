@@ -70,7 +70,7 @@ const HomeView: React.FC = () => {
               <img
                 alt="Radio Studio"
                 className="w-full h-full object-cover"
-                src="https://picsum.photos/seed/radio-studio/600/600"
+                src="/fondo-radio.webp"
               />
               <div className="absolute top-4 left-4 bg-[#FF6B00] text-white px-3 py-1 rounded text-xs font-black uppercase">Último Episodio</div>
             </div>
