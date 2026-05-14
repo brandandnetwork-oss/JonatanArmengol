@@ -18,7 +18,7 @@ const HomeView: React.FC = () => {
           </div>
           <div className="relative z-20 max-w-3xl pt-20">
             <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 max-w-fit">
-              <span className="text-white font-bold text-sm uppercase tracking-widest">Gastronomía · Accesibilidad · Comunicación</span>
+              <span className="text-white font-bold text-sm uppercase tracking-widest">Accesibilidad · Gastronomía · Comunicación</span>
             </div>
             <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8 drop-shadow-xl">
               Jonatan <br /><span className="text-white/80">Armengol</span>
