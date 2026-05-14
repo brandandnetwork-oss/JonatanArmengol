@@ -18,11 +18,13 @@ import ContactView from './views/ContactView';
 import InfluencerView from './views/InfluencerView';
 import ConferenciasView from './views/ConferenciasView';
 import AccesibilidadView from './views/AccesibilidadView';
+import PrensaView from './views/PrensaView';
+import CatasView from './views/CatasView';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col font-sans bg-[#FFF5EB] text-gray-900 antialiased">
+      <div className="min-h-screen flex flex-col font-sans bg-[#FAFAFA] text-gray-900 antialiased">
         <ScrollToTop />
         <Header />
         <main className="flex-1">
@@ -33,6 +35,8 @@ const App: React.FC = () => {
             <Route path="/influencer" element={<InfluencerView />} />
             <Route path="/accesibilidad" element={<AccesibilidadView />} />
             <Route path="/conferencias" element={<ConferenciasView />} />
+            <Route path="/catas" element={<CatasView />} />
+            <Route path="/prensa" element={<PrensaView />} />
             <Route path="/contacto" element={<ContactView />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const RadioView: React.FC = () => {
   return (
-    <div className="w-full bg-[#FFF5EB]">
+    <div className="w-full bg-[#FAFAFA]">
       {/* Hero */}
       <section className="p-4 md:p-10">
         <div
@@ -11,14 +11,14 @@ const RadioView: React.FC = () => {
           style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%), url("/fondo-radio.webp")' }}
         >
           <div className="flex flex-col gap-3 text-left max-w-2xl">
-            <span className="bg-[#FF6B00] px-3 py-1 rounded text-white text-xs font-bold uppercase tracking-widest w-fit">Radio Program</span>
+            <span className="bg-white px-3 py-1 rounded text-[#1A1A1A] text-xs font-bold uppercase tracking-widest w-fit">Radio Program</span>
             <h1 className="text-white text-5xl md:text-7xl font-black leading-tight tracking-[-0.033em]">Comer a Ciegas</h1>
             <h2 className="text-white/90 text-lg md:text-xl font-medium leading-relaxed">
               El primer podcast gastronómico diseñado para personas ciegas y amantes del buen comer. Un viaje sensorial sin precedentes.
             </h2>
           </div>
           <div className="flex gap-4">
-            <a href="https://www.radio-espana.es/podcasts/comer-a-ciegas" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center rounded-lg h-12 px-6 bg-[#FF6B00] text-white text-base font-bold transition-transform hover:scale-105 shadow-lg shadow-[#FF6B00]/30">
+            <a href="https://www.radio-espana.es/podcasts/comer-a-ciegas" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center rounded-lg h-12 px-6 bg-white text-[#1A1A1A] text-base font-bold transition-transform hover:scale-105 shadow-lg">
               <span className="material-symbols-outlined mr-2">play_arrow</span> Último episodio
             </a>
             <a href="https://www.radio-espana.es/podcasts/comer-a-ciegas" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md text-white border border-white/20 text-base font-bold hover:bg-white/20">
@@ -31,15 +31,15 @@ const RadioView: React.FC = () => {
       {/* Featured Episode */}
       <section className="max-w-[1200px] mx-auto px-4 md:px-10 mb-12">
         <h2 className="text-dark-accent text-2xl md:text-3xl font-bold mb-6">Episodio Destacado</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 bg-white p-6 rounded-2xl shadow-xl border border-[#f4f2f0]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-200">
           <div className="lg:col-span-2 space-y-6">
             <div>
               <h3 className="text-2xl font-bold mb-2 text-dark-accent">Cata a ciegas de aceites premium: El oro líquido de Jaén</h3>
-              <p className="text-[#897261]">Publicado el 22 de Octubre, 2023 • 48 min</p>
+              <p className="text-gray-500">Publicado el 22 de Octubre, 2023 • 48 min</p>
             </div>
             <div className="relative flex items-center justify-center bg-dark-accent aspect-video rounded-xl overflow-hidden group">
               <img src="https://picsum.photos/seed/oil-tasting/800/450" className="w-full h-full object-cover opacity-60" />
-              <button className="absolute z-10 size-20 bg-[#FF6B00] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+              <button className="absolute z-10 size-20 bg-[#1A1A1A] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-4xl">play_arrow</span>
               </button>
             </div>
@@ -53,10 +53,10 @@ const RadioView: React.FC = () => {
                 { icon: 'shopping_bag', title: 'Selección Gourmet', desc: '3 marcas premium.' }
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="bg-[#FF6B00]/10 text-[#FF6B00] p-2 rounded-lg material-symbols-outlined">{item.icon}</span>
+                  <span className="bg-gray-100 text-[#1A1A1A] p-2 rounded-lg material-symbols-outlined">{item.icon}</span>
                   <div>
                     <p className="font-bold text-sm text-dark-accent">{item.title}</p>
-                    <p className="text-xs text-[#897261]">{item.desc}</p>
+                    <p className="text-xs text-gray-500">{item.desc}</p>
                   </div>
                 </li>
               ))}
@@ -76,12 +76,12 @@ const RadioView: React.FC = () => {
             { cat: 'Vinos', title: '¿Realmente importa el año?', date: '08 Oct', dur: '45 min' },
             { cat: 'Especias', title: 'La ruta de las especias s.XXI', date: '01 Oct', dur: '28 min' }
           ].map((item, idx) => (
-            <div key={idx} className="group bg-white rounded-xl overflow-hidden shadow-sm border border-[#f4f2f0] hover:shadow-xl transition-all">
+            <div key={idx} className="group bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-xl transition-all">
               <img src={`https://picsum.photos/seed/ep-${idx}/400/225`} className="w-full aspect-video object-cover" />
               <div className="p-5">
-                <span className="text-[#FF6B00] text-xs font-bold uppercase mb-2 block">{item.cat}</span>
-                <h3 className="text-lg font-bold mb-2 group-hover:text-[#FF6B00] transition-colors">{item.title}</h3>
-                <div className="flex items-center justify-between text-xs font-medium text-[#897261]">
+                <span className="text-[#1A1A1A] text-xs font-bold uppercase mb-2 block">{item.cat}</span>
+                <h3 className="text-lg font-bold mb-2 group-hover:text-gray-600 transition-colors">{item.title}</h3>
+                <div className="flex items-center justify-between text-xs font-medium text-gray-500">
                   <span>{item.date}, 2023</span>
                   <span className="flex items-center gap-1"><span className="material-symbols-outlined text-xs">schedule</span> {item.dur}</span>
                 </div>

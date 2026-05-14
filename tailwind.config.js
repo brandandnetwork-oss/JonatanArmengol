@@ -10,18 +10,18 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#FF6B00', // Vibrant Orange
-          hover: '#E65A00',
-          light: '#FF8533',
+          DEFAULT: '#1A1A1A',
+          hover: '#000000',
+          light: '#333333',
         },
-        secondary: '#1A1A1A', // Dark accents
+        secondary: '#1A1A1A',
         canvas: {
-          light: '#FFF5EB', // Very light orange tint
-          dark: '#120C0A',
+          light: '#FAFAFA',
+          dark: '#0A0A0A',
         },
         surface: {
           light: '#FFFFFF',
-          dark: '#1E1E1E',
+          dark: '#1A1A1A',
         }
       },
       fontFamily: {
