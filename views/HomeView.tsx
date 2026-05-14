@@ -18,7 +18,7 @@ const HomeView: React.FC = () => {
           </div>
           <div className="relative z-20 max-w-3xl pt-20">
             <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 max-w-fit">
-              <span className="text-white font-bold text-sm uppercase tracking-widest">Accesibilidad · Gastronomía · Comunicación</span>
+              <span className="text-white font-bold text-sm uppercase tracking-widest">Accesibilidad · Comunicación · Gastronomía </span>
             </div>
             <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8 drop-shadow-xl">
               Jonatan <br /><span className="text-white/80">Armengol</span>
@@ -27,6 +27,13 @@ const HomeView: React.FC = () => {
               El primer crítico gastronómico ciego de España: <br />derribando barreras para que <span className="text-white font-bold">todos puedan disfrutar la gastronomía</span>.
             </p>
             <div className="flex flex-wrap gap-4">
+              <Link
+                to="/accesibilidad"
+                className="flex items-center gap-3 bg-white text-[#1A1A1A] px-8 py-5 rounded-2xl font-black text-lg hover:scale-105 hover:shadow-xl transition-all cursor-pointer"
+                aria-label="Consultoría en Accesibilidad: descubre cómo hacemos los productos más inclusivos para personas con discapacidad visual"
+              >
+                <span className="material-symbols-outlined filled" aria-hidden="true">accessibility_new</span> Accesibilidad
+              </Link>
               {/* Escuchar Radio */}
               <a
                 href="https://www.radio-espana.es/podcasts/comer-a-ciegas"
@@ -47,14 +54,6 @@ const HomeView: React.FC = () => {
               >
                 <span className="material-symbols-outlined" aria-hidden="true">local_fire_department</span> El Camino del Fuego
               </a>
-              {/* Accesibilidad - DESTACADO */}
-              <Link
-                to="/accesibilidad"
-                className="flex items-center gap-3 bg-white text-[#1A1A1A] px-8 py-5 rounded-2xl font-black text-lg hover:scale-105 hover:shadow-xl transition-all cursor-pointer"
-                aria-label="Consultoría en Accesibilidad: descubre cómo hacemos los productos más inclusivos para personas con discapacidad visual"
-              >
-                <span className="material-symbols-outlined filled" aria-hidden="true">accessibility_new</span> Accesibilidad
-              </Link>
             </div>
           </div>
         </div>
